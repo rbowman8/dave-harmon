@@ -1,0 +1,77 @@
+<form action="index.html" method="post">
+<fieldset>
+  <label for="services">Services:</label>
+            <select id="services" name="services">
+                <optgroup label="Types of Treatment">
+                   <option value="alcohol_treatment">Alcohol Treatment</option>
+                   <option value="DNA Testing Program">DNA Testing Program</option>
+                   <option value="Substance Abuse and Dependence Programs">Substance Abuse and Dependence Programs</option>
+                   <option value="Family/Significant Other Support Program">Family/Significant Other Support Program</option>
+                   <option value="Gambling Problem Program">Gambling Problem Program</option>
+                   <option value="Compulsive Behavior Program">Compulsive Behavior Program</option>
+                </optgroup>
+
+                <optgroup label="Mobile">
+                   <option value="android_developer">Android Developer</option>
+                   <option value="ios_developer">iOS Developer</option>
+               
+                    <option value="mobile_designer">Mobile Designer</option>
+
+
+
+                </optgroup>
+
+</fieldset>
+
+
+Compulsive Behavior Program
+
+Substance Abuse Professional Evaluation Program
+
+Marriage Counseling Program
+
+Family Reunification Counseling Program
+
+Parenting Counseling Program
+
+Mental Health Program
+
+Military and Trauma Counseling Program
+
+
+School/Student Counseling Program
+
+
+Grief/Trauma Counseling Program
+
+Medical Support Counseling Program
+
+Domestic Violence Counseling
+
+Anger Management Program
+
+ADHD-ADD Counseling Program
+
+Lifestyle Change Counseling Program
+
+Sex Offender Counseling
+
+Criminal Defective Thinking Counseling
+
+Gender Disorder Counseling Program 
+
+
+Spiritual/Personal Growth/Faith Counseling
+
+
+Diversion & Alternative Sentencing Counseling
+
+Crital Incident Debriefing Managanment/Consultation
+
+Workplace Program
+
+Medical Detoxification Program
+
+Drug & Alcohol Testing Services
+
+DNA Testing Program
