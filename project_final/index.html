@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="main-head">
+  <meta charset="utf-8">
+  <title>Dave Harmon and Assoc</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/new.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="java/script.js"></script>
+  <script src="scripts/slideshow.min.js"></script>
+</head>
+<header>    
+  <h1 class="name"><a href="index.html">Dave Harmon & Associates</a></h1>  
+  <nav>
+    <ul class="main-nav">
+      <li><a href="index.html">homepage</a></li>
+      <li><a href="about.html">about us</a></li>
+      <li><a href="contact.html">contact</a></li> 
+      <li><a href="services.html">services</a></li>     
+  </nav>
+            
+        </header>    
+        <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+            <figure>
+          <img src="img/louskyline4.jpg" width="100%" /><figcaption></figcaption> 
+            </figure>
+            <figure>
+          <img src="img/quote1.jpg" width="100%" /><figcaption></figcaption> 
+            </figure>
+            <figure>
+          <img src="img/addiction.jpg" width="100%" /><figcaption></figcaption> 
+            </figure>
+            <figure>
+          <img src="img/depend.jpg" width="100%" /><figcaption></figcaption> 
+            </figure>
+            <figure>
+          <img src="img/freedom.jpg" width="100%" /><figcaption></figcaption> 
+            </figure>
+        </div>
+<script>
+var opts = {
+    auto : {
+        speed : 3500, 
+        pauseOnHover : true
+    },
+    fullScreen : false, 
+    swipe : true
+};
+makeBSS('.num1', opts);
+var opts2 = {
+    auto : false,
+    fullScreen : true,
+    swipe : true
+};
+makeBSS('.num2', opts2);
+</script>
+  </header>
+<script>
+//configure the paths of the images, plus corresponding target links
+slideshowimages("4thstlive.jpg","address.jpg","daveharmbuild.jpg","louskyline.jpg","loubridge.jpg")
+slideshowlinks("http://google.com","http://google.com","http://google.com","http://google.com","http://google.com")
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+</script>
+
+
+
+<body>
+	<!-- Static Video
+  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/eYoZECdoLUQ" frameborder="0" allowfullscreen></iframe
+  -->
+<div class="row">
+    <div class="col-sm-4">
+      <h3>Seek Help With Us</h3>
+      <p>Welcome to the Dave Harmon and Associates website!  Dave Harmon and Associates began providing drug treatment services to several hundred addicts in Louisville, KY in 1977. Today, Dave Harmon and Associates is a multi-service organization providing drug treatment and rehabilitation for patients across the country. We offer treatment for addiction to prescription medications such as oxycontin, hydrocodone and other opioids. Through a number of clinically proven methods, including methadone and buprenorphine (Suboxone) treatment, we have used evidence-based methods to bring the most effective results possible to our patient population. 
+
+      <p>In combining medical treatment with the behavioral services, Dave Harmon and Associates offers the most successful option for many of our patients.  In addition to drug addiction treatment, Dave Harmon and Associates provides primary medical care and mental health services through a network of fixed sites.  We provide state-of-the-art drug treatment, mental health and medical services through a dedicated staff committed to offering personal, caring, and individual attention to each of our patients. Our quality care has been recognized by state and federal governments, accreditation organizations, as well as patients and their families.</p>
+
+      <p>We are committed to high-quality community-based healthcare and local addiction treatment in the Louisville metro area.  Please visit the Contact Page to contact us for any further questions about our drug treatment services and programs.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Abuse Rates in Louisville, KY</h3>
+      <p>The Louisville metro area contains all of: Bullitt County, Clark County, Floyd County, Harrison County, Jefferson County, Oldham County, and Scott County. There were a total of 4,979 users who checked into rehab here in 2012.
+      With 0.44% of the total population receiving treatment, Louisville had average rates of rehab admittances compared to other areas in the United States.
+
+      Usage has been on the rise. The number of admits has increased 4.0% from five years ago and has jumped 4.0% since the previous year.</p>
+     </div>
+     <div class="col-sm-4">
+      <h3>What is Addiction?</h3> 
+      <p>Addiction is a chronic, often relapsing brain disease that causes compulsive drug seeking and use, despite harmful consequences to the addicted individual and to those around him or her. Although the initial decision to take drugs is voluntary for most people, the brain changes that occur over time challenge an addicted person’s self-control and hamper his or her ability to resist intense impulses to take drugs.</p>
+      <p>Fortunately, treatments are available to help people counter addiction’s powerful disruptive effects. Research shows that combining addiction treatment medications with behavioral therapy is the best way to ensure success for most patients. Treatment approaches that are tailored to each patient’s drug abuse patterns and any co-occurring medical, psychiatric, and social problems can lead to sustained recovery and a life without drug abuse.</p>
+
+      <p>Similar to other chronic, relapsing diseases, such as diabetes, asthma, or heart disease, drug addiction can be managed successfully. And as with other chronic diseases, it is not uncommon for a person to relapse and begin abusing drugs again. Relapse, however, does not signal treatment failure—rather, it indicates that treatment should be reinstated or adjusted or that an alternative treatment is needed to help the individual regain control and recover.</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+
+
+<footer>
+<nav>
+    <ul class="main-nav">
+      <li><a href="index.html">homepage</a></li>
+      <li><a href="about.html">about us</a></li>
+      <li><a href="contact.html">contact</a></li> 
+      <li><a href="services.html">services</a></li>     
+</nav>
+
+<p>4010 Dupont Circle, Suite 226
+Louisville, KY 40207
+Phone: (502) 896-8006
+On Call Cell: (502) 558-5107
+Emergency: (502) 377-7720
+Fax: (502) 896-8055
+email: daveharmon.assoc@yahoo.com</p>
+
+  
+  <p class="foot">&copy; 2016 The Bowman Corporation.</p>
+</footer>
+</html>
